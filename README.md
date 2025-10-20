@@ -11,6 +11,26 @@
 Python Web 应用
 
 ## 服务配置
+```bash
+{
+    "mcpServers": {
+        "default-server": {
+            "command": "uv",
+            "args": [
+                "run",
+                "--with",
+                "mcp",
+                "mcp",
+                "run",
+                "server.py"
+            ],
+            "env": {
+            }
+        }
+    }
+}
+ ```
+## 服务配置
 
 ```bash
 # 创建并激活虚拟环境
@@ -34,8 +54,3 @@ uv pip install -e . -i https://mirrors.aliyun.com/pypi/simple/
 # 运行
 mcp dev server.py
 ```
-
-
-## 环境变量配置
-
-根据提供的 README.md 内容，未发现明确的环境变量配置信息。文档中没有包含名为 `env` 的键值对配置字段。
